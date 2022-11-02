@@ -108,6 +108,7 @@ func main() {
 	if err != nil {
 		panic(err)
 	}
+	defer conn.Close()
 
 	// 启动读取携程
 	go readMsg(&conn, readFinished)
@@ -124,12 +125,17 @@ func main() {
 		if err != nil {
 			panic(err)
 		}
-		if cmdStr == "" || cmdStr[0] == delim {
+		if cmdStr == "" || cmdStr[0] == delim || cmdStr == CRLF {
 			continue
 		}
 
-		// 移除末尾的\n字符
-		cmdStr = cmdStr[:len(cmdStr)-1]
+		// 移除末尾的 \n 或 \r\n
+		cmdStr = strings.TrimRight(cmdStr, "\n")
+		cmdStr = strings.TrimRight(cmdStr, "\r")
+
+		if cmdStr == "exit" {
+			return
+		}
 
 		// 切割命令参数
 		cmdStrSlice := strings.Split(cmdStr, " ")

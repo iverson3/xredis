@@ -48,7 +48,8 @@ func readMsg(conn *net.Conn, readFinished chan struct{}) {
 				}
 				if count == -1 {
 					// 示例：$-1
-					fmt.Printf("%d\n", count)
+					//fmt.Printf("%d\n", count)
+					fmt.Printf("OK\n")
 					readFinished <- struct{}{}
 					count = 0
 					continue

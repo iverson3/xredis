@@ -4,7 +4,7 @@
 
 > 目前已支持 string, list, set, sorted set 数据结构
 >
-> 支持自动过期功能 (TTL) 
+> 支持多数据库，支持自动过期功能 (TTL) 
 >
 > 支持AOF持久化及AOF重写
 >
@@ -50,3 +50,15 @@
   - SUnionStore
   - SDiff
   - SDiffStore
+
+
+
+#### 如何使用xredis：
+
+xredis服务端：
+
+<img src="C:\Users\wangf16\AppData\Roaming\Typora\typora-user-images\1667373540567.png" alt="1667373540567"  />
+
+xredis客户端：
+
+![1667373624392](C:\Users\wangf16\AppData\Roaming\Typora\typora-user-images\1667373624392.png)

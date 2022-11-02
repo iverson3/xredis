@@ -1,8 +1,8 @@
 package main
 
 import (
-	"studygolang/wangdis/redis/server"
-	"studygolang/wangdis/tcp"
+	"github.com/iverson3/xredis/redis/server"
+	"github.com/iverson3/xredis/tcp"
 )
 
 func main() {

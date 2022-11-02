@@ -6,14 +6,14 @@ import (
 	"log"
 	"runtime/debug"
 	"strings"
-	"studygolang/wangdis/config"
-	"studygolang/wangdis/database"
-	"studygolang/wangdis/datastruct/dict"
-	databaseInter "studygolang/wangdis/interface/database"
-	"studygolang/wangdis/interface/redis"
-	"studygolang/wangdis/lib/consistenthash"
-	"studygolang/wangdis/lib/idgenerator"
-	"studygolang/wangdis/redis/protocol"
+	"github.com/iverson3/xredis/config"
+	"github.com/iverson3/xredis/database"
+	"github.com/iverson3/xredis/datastruct/dict"
+	databaseInter "github.com/iverson3/xredis/interface/database"
+	"github.com/iverson3/xredis/interface/redis"
+	"github.com/iverson3/xredis/lib/consistenthash"
+	"github.com/iverson3/xredis/lib/idgenerator"
+	"github.com/iverson3/xredis/redis/protocol"
 )
 
 const (

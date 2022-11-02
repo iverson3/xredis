@@ -1,6 +1,6 @@
 package list
 
-import "studygolang/wangdis/lib/utils"
+import "github.com/iverson3/xredis/lib/utils"
 
 // LinkedList 双向链表
 type LinkedList struct {

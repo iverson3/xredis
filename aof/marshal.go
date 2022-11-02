@@ -2,12 +2,12 @@ package aof
 
 import (
 	"strconv"
-	"studygolang/wangdis/datastruct/dict"
-	List "studygolang/wangdis/datastruct/list"
-	"studygolang/wangdis/datastruct/set"
-	"studygolang/wangdis/datastruct/sortedset"
-	"studygolang/wangdis/interface/database"
-	"studygolang/wangdis/redis/protocol"
+	"github.com/iverson3/xredis/datastruct/dict"
+	List "github.com/iverson3/xredis/datastruct/list"
+	"github.com/iverson3/xredis/datastruct/set"
+	"github.com/iverson3/xredis/datastruct/sortedset"
+	"github.com/iverson3/xredis/interface/database"
+	"github.com/iverson3/xredis/redis/protocol"
 	"time"
 )
 

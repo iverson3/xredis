@@ -1,9 +1,9 @@
 package database
 
 import (
-	"studygolang/wangdis/config"
-	"studygolang/wangdis/interface/redis"
-	"studygolang/wangdis/redis/protocol"
+	"github.com/iverson3/xredis/config"
+	"github.com/iverson3/xredis/interface/redis"
+	"github.com/iverson3/xredis/redis/protocol"
 )
 
 // Auth 校验客户端的密码

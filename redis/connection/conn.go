@@ -3,7 +3,7 @@ package connection
 import (
 	"bytes"
 	"net"
-	"studygolang/wangdis/lib/sync/wait"
+	"github.com/iverson3/xredis/lib/sync/wait"
 	"sync"
 	"time"
 )

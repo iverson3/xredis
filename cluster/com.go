@@ -4,10 +4,10 @@ import (
 	"context"
 	"errors"
 	"strconv"
-	"studygolang/wangdis/interface/redis"
-	"studygolang/wangdis/lib/utils"
-	"studygolang/wangdis/redis/client"
-	"studygolang/wangdis/redis/protocol"
+	"github.com/iverson3/xredis/interface/redis"
+	"github.com/iverson3/xredis/lib/utils"
+	"github.com/iverson3/xredis/redis/client"
+	"github.com/iverson3/xredis/redis/protocol"
 )
 
 func (cluster *Cluster) getPeerClient(peer string) (*client.Client, error) {

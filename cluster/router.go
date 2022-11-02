@@ -1,6 +1,6 @@
 package cluster
 
-import "studygolang/wangdis/interface/redis"
+import "github.com/iverson3/xredis/interface/redis"
 
 // CmdLine is alias for [][]byte, represents a command line
 type CmdLine = [][]byte

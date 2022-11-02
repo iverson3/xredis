@@ -1,7 +1,7 @@
 package database
 
 import (
-	"studygolang/wangdis/interface/redis"
+	"github.com/iverson3/xredis/interface/redis"
 	"time"
 )
 

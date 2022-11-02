@@ -1,10 +1,10 @@
 package database
 
 import (
-	"studygolang/wangdis/interface/database"
-	"studygolang/wangdis/interface/redis"
-	"studygolang/wangdis/lib/utils"
-	"studygolang/wangdis/redis/protocol"
+	"github.com/iverson3/xredis/interface/database"
+	"github.com/iverson3/xredis/interface/redis"
+	"github.com/iverson3/xredis/lib/utils"
+	"github.com/iverson3/xredis/redis/protocol"
 )
 
 // string

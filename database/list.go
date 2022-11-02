@@ -2,11 +2,11 @@ package database
 
 import (
 	"strconv"
-	List "studygolang/wangdis/datastruct/list"
-	"studygolang/wangdis/interface/database"
-	"studygolang/wangdis/interface/redis"
-	"studygolang/wangdis/lib/utils"
-	"studygolang/wangdis/redis/protocol"
+	List "github.com/iverson3/xredis/datastruct/list"
+	"github.com/iverson3/xredis/interface/database"
+	"github.com/iverson3/xredis/interface/redis"
+	"github.com/iverson3/xredis/lib/utils"
+	"github.com/iverson3/xredis/redis/protocol"
 )
 
 func (db *DB) getAsList(key string) (*List.LinkedList, protocol.ErrorReply) {

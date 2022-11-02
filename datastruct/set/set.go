@@ -1,6 +1,6 @@
 package set
 
-import "studygolang/wangdis/datastruct/dict"
+import "github.com/iverson3/xredis/datastruct/dict"
 
 type Set struct {
 	dict dict.Dict

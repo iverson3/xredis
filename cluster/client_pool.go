@@ -4,9 +4,9 @@ import (
 	"context"
 	"errors"
 	"github.com/jolestar/go-commons-pool/v2"
-	"studygolang/wangdis/config"
-	"studygolang/wangdis/lib/utils"
-	"studygolang/wangdis/redis/client"
+	"github.com/iverson3/xredis/config"
+	"github.com/iverson3/xredis/lib/utils"
+	"github.com/iverson3/xredis/redis/client"
 )
 
 type connectionFactory struct {

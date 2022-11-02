@@ -1,8 +1,8 @@
 package database
 
 import (
-	"studygolang/wangdis/aof"
-	"studygolang/wangdis/lib/utils"
+	"github.com/iverson3/xredis/aof"
+	"github.com/iverson3/xredis/lib/utils"
 )
 
 func readFirstKey(args [][]byte) ([]string, []string) {

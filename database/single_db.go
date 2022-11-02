@@ -3,12 +3,12 @@ package database
 import (
 	"log"
 	"strings"
-	"studygolang/wangdis/datastruct/dict"
-	"studygolang/wangdis/datastruct/lock"
-	"studygolang/wangdis/interface/database"
-	"studygolang/wangdis/interface/redis"
-	"studygolang/wangdis/lib/timewheel"
-	"studygolang/wangdis/redis/protocol"
+	"github.com/iverson3/xredis/datastruct/dict"
+	"github.com/iverson3/xredis/datastruct/lock"
+	"github.com/iverson3/xredis/interface/database"
+	"github.com/iverson3/xredis/interface/redis"
+	"github.com/iverson3/xredis/lib/timewheel"
+	"github.com/iverson3/xredis/redis/protocol"
 	"sync"
 	"time"
 )

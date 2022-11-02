@@ -6,10 +6,10 @@ import (
 	"log"
 	"os"
 	"strconv"
-	"studygolang/wangdis/config"
-	"studygolang/wangdis/interface/database"
-	"studygolang/wangdis/lib/utils"
-	"studygolang/wangdis/redis/protocol"
+	"github.com/iverson3/xredis/config"
+	"github.com/iverson3/xredis/interface/database"
+	"github.com/iverson3/xredis/lib/utils"
+	"github.com/iverson3/xredis/redis/protocol"
 	"time"
 )
 

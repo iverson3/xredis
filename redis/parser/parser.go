@@ -8,8 +8,8 @@ import (
 	"runtime/debug"
 	"strconv"
 	"strings"
-	"studygolang/wangdis/interface/redis"
-	"studygolang/wangdis/redis/protocol"
+	"github.com/iverson3/xredis/interface/redis"
+	"github.com/iverson3/xredis/redis/protocol"
 )
 
 type readState struct {

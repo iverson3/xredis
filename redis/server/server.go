@@ -3,18 +3,18 @@ package server
 import (
 	"context"
 	"fmt"
+	"github.com/iverson3/xredis/cluster"
+	"github.com/iverson3/xredis/config"
+	database2 "github.com/iverson3/xredis/database"
+	"github.com/iverson3/xredis/interface/database"
+	"github.com/iverson3/xredis/lib/sync/atomic"
+	"github.com/iverson3/xredis/redis/connection"
+	"github.com/iverson3/xredis/redis/parser"
+	"github.com/iverson3/xredis/redis/protocol"
 	"io"
 	"log"
 	"net"
 	"strings"
-	"studygolang/wangdis/cluster"
-	"studygolang/wangdis/config"
-	database2 "studygolang/wangdis/database"
-	"studygolang/wangdis/interface/database"
-	"studygolang/wangdis/lib/sync/atomic"
-	"studygolang/wangdis/redis/connection"
-	"studygolang/wangdis/redis/parser"
-	"studygolang/wangdis/redis/protocol"
 	"sync"
 )
 
@@ -38,6 +38,7 @@ func MakeHandler() *Handler {
 	// 判断是使用集群模式还是单机模式
 	if config.Properties.Self != "" && len(config.Properties.Peers) > 0 {
 		db = cluster.MakeCluster()
+		cluster.MakeCluster()
 	} else {
 		db = database2.NewStandaloneServer()
 	}

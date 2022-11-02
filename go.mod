@@ -1,4 +1,4 @@
-module studygolang/wangdis
+module github.com/iverson3/xredis
 
 go 1.17
 

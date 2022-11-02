@@ -57,8 +57,8 @@
 
 xredis服务端：
 
-<img src="C:\Users\wangf16\AppData\Roaming\Typora\typora-user-images\1667373540567.png" alt="1667373540567"  />
+<img src="https://raw.githubusercontent.com/iverson3/xredis/main/images/xredis-server.png" alt="xredis-server"  />
 
 xredis客户端：
 
-![1667373624392](C:\Users\wangf16\AppData\Roaming\Typora\typora-user-images\1667373624392.png)
+![xredis-cli](https://raw.githubusercontent.com/iverson3/xredis/main/images/xredis-cli.png)

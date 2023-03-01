@@ -1,16 +1,16 @@
 package aof
 
 import (
-	"io"
-	"log"
-	"os"
-	"strconv"
 	"github.com/iverson3/xredis/config"
 	"github.com/iverson3/xredis/interface/database"
 	"github.com/iverson3/xredis/lib/utils"
 	"github.com/iverson3/xredis/redis/connection"
 	"github.com/iverson3/xredis/redis/parser"
 	"github.com/iverson3/xredis/redis/protocol"
+	"io"
+	"log"
+	"os"
+	"strconv"
 	"sync"
 )
 
@@ -159,7 +159,9 @@ func (handler *Handler) LoadAof(maxBytes int) {
 // Close 优雅的停止aof持久化任务
 func (handler *Handler) Close() {
 	if handler.aofFile != nil {
-		close(handler.aofChan)
+		if handler.aofChan != nil {
+			close(handler.aofChan)
+		}
 		// 等待剩余的aof任务处理结束
 		<-handler.aofFinished
 		err := handler.aofFile.Close()
